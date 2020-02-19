@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import BarChart from './Components/barChart';
+import React, { Component, PureComponent, Fragment } from 'react';
+// import BarChart from './Components/barChart';
+import Dropdown from './Components/dropdown';
 
-class chart extends Component {
+class Chart extends Component {
   render() {
-    return <BarChart />
+    return <Dropdown />
   }
 }
 
 
-export default chart;
+export default Chart;
