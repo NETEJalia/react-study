@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Chart from './barChart';
+import style from './component-styles/dropdowns.scss';
 
-class dropdown extends Component {
+class WidgetBody extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,14 +17,13 @@ class dropdown extends Component {
 
   render() {
     return (
-        <div>
-            <div>
+        <div className="widget">
+            <div className="dropdown">
                 <select defaultValue={ this.state.genderSelected } onChange={ this.handleChange } >
                     <option value='All'>All Genders</option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>                
                 </select>
-            <p>{this.state.genderSelected}</p>
             </div>
             <div>
                 <Chart genderSelected={this.state.genderSelected} />
@@ -33,4 +33,4 @@ class dropdown extends Component {
   }
 }
 
-export default dropdown;
+export default WidgetBody;

@@ -147,7 +147,8 @@ class BarChart extends Component {
     return (
         <ReactEcharts
         option={this.getOption()}
-        style = {{height: '80vh', left: 50, top: 50, width: '90vw'}}
+        style = {{height: '600px', width: '100%'}}
+        className="bar-chart"
         opts={{renderer: 'svg'}}
         />
     );

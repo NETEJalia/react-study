@@ -1,0 +1,19 @@
+.widget {
+    max-width: 1200px;
+    margin: auto;
+    border: solid 2px #ccc;
+    border-radius: 5px;
+    .dropdown {
+        background: #ccc;
+        position: relative;
+        padding: 15px 0px;
+        width: 100%;
+        margin-bottom: 15px;
+        select {
+            margin-left: 15px;
+        }
+    }
+    .bar-chart {
+        padding: 15px;
+    }
+}
