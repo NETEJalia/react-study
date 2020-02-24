@@ -1,11 +1,5 @@
 import React, {Component} from 'react';
-import ListData from "./../list.json";
-
-function displayData () {
-    console.log(ListData);
-}
-
-displayData();
+import ListData from "../data/list.json";
 
 class Listings extends Component {
     render() {
@@ -13,7 +7,7 @@ class Listings extends Component {
             <div>
                 <h1>List</h1>
                 <ul>
-                    {ListData.map((listDetail, index) => {
+                    {ListData.map((listDetail) => {
                         return (
                             <li>
                                 <h2>{listDetail.title}</h2>
@@ -21,10 +15,12 @@ class Listings extends Component {
                                 <p>{listDetail.appID}</p>
                                 <ul>
                                     {listDetail.subItems.map((item, index) => {
-                                        return (<li>
-                                            {item.number}
-                                            {item.author}
-                                            </li>);
+                                        return (
+                                            <li>
+                                                {item.number}
+                                                {item.author}
+                                            </li>
+                                        );
                                     })}
                                 </ul>
                             </li>
