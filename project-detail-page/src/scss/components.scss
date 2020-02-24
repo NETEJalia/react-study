@@ -1,0 +1,78 @@
+.side-list {
+    width: 260px;
+    .card {
+        background: white;
+        border: none;
+        border-radius: 0px;
+        .card-header {
+            padding: 0px;
+            .header-top {
+                padding: 8px 15px;
+                background: #0781bd;
+                border-right: solid 1px #0781bd;
+                color: white;
+            }
+            h2 {
+                font-size: 14px;
+            }
+            p {
+                font-size: 12px;
+                margin-bottom: 0px;
+            }
+            .header-footer {
+                display: flex;
+                justify-content: space-between;
+                border-right: solid 1px #ddd;
+                font-size: 12px;
+                padding: 8px 15px;
+                strong {
+                    margin-left: 5px;
+                }
+                .toggle {
+                    .accordion-opener {
+                        background: #0781bd;
+                        height: 22px;
+                        width: 20px;
+                        position: relative;
+                        &::before {
+                            content: '\002D';
+                            font-size: 35px;
+                            position: absolute;
+                            left: 5px;
+                            top: -19px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .card-body {
+            padding: 0px;
+            ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                border-right: solid 1px #ddd;
+                li {
+                    background: #ebf1f4;
+                    border-bottom: solid 1px #ddd;
+                    padding: 5px 3px;
+                    padding-left: 15px;
+                    font-size: 12px;
+                    &:nth-child(1) {
+                        border-top: solid 1px #ddd;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    h1 {
+        color: #06446f;
+        font-size: 1.75rem;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+    }
+}
