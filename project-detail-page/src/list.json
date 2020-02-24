@@ -2,8 +2,8 @@
     {
         "title": "Center for Immune Therapeutics Against Staphlyococcus Auretics",
         "name": "Aman, M",
-        "app-id": "1U19AI42729",
-        "sub-items": [
+        "appID": "1U19AI42729",
+        "subItems": [
             {
                 "number": "001",
                 "author": "Simile, Charlie"
@@ -29,8 +29,8 @@
     {
         "title": "Lorem Ipsum Dolor Sit Amet Consecuteur",
         "name": "Aman, M",
-        "app-id": "1U19AI42729",
-        "sub-items": [
+        "appID": "1U19AI42729",
+        "subItems": [
             {
                 "number": "001",
                 "author": "Simile, Charlie"
@@ -48,8 +48,8 @@
     {
         "title": "Lorem Ipsum Dolor Sit Amet Consecuteur",
         "name": "Aman, M",
-        "app-id": "1U19AI42729",
-        "sub-items": [
+        "appID": "1U19AI42729",
+        "subItems": [
             {
                 "number": "001",
                 "author": "Simile, Charlie"
