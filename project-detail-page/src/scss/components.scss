@@ -1,5 +1,45 @@
 .side-list {
     width: 260px;
+    .side-list-header {
+        font-size: 14px;
+        padding: 10px 15px;
+        border-right: solid 1px #ddd;
+        h2 {
+            color: #06446f;
+        }
+        button {
+            font-size: 14px;
+            width: 100%;
+            margin: 5px 0px 10px;
+            span {
+                position: relative;
+                margin-right: 30px;
+                &::before {
+                    content: '\002B';
+                    background: darken(#aedbc5, 8%);
+                    color: white;
+                    font-weight: bold;
+                    line-height: 20px;
+                    position: absolute;
+                    font-size: 22.5px;
+                    height: 24px;
+                    top: -3px;
+                    border-radius: 100%;
+                    width: 24px;
+                }
+            }
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        input {
+            border-radius: 0px;
+            font-size: 14px;
+            padding: 0px;
+            padding-left: 5px;
+        }
+    }
     .card {
         background: white;
         border: none;
@@ -69,10 +109,26 @@
 }
 
 .banner {
+    padding: 15px;
+    border-bottom: solid 3px #0781bd;
     h1 {
         color: #06446f;
         font-size: 1.75rem;
         font-weight: bold;
         font-family: 'Nunito', sans-serif;
+    }
+    .header-details {
+        p {
+            display: inline-block;
+            font-size: 12px;
+            padding: 0 10px;
+            border-right: solid 1.5px #888;
+        }
+        :nth-child(1) {
+            padding-left: 0px;
+        }
+        :nth-child(4) {
+            border-right: none;
+        }
     }
 }
