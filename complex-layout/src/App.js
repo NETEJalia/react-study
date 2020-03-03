@@ -4,40 +4,42 @@ import {
   Switch,
   Route,
   Link,
-  useRouteMatch,
-  useParams
+  // useRouteMatch,
+  // useParams
 } from 'react-router-dom';
 import ProjectData from './data/projects.json';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Switch>
-              <nav>
-                <ul>
-                  {ProjectData.map((project) => {
-                    return(
-                      <li>
-                        <Link to={`/project/${project.number}`}>
-                          <div className="project-number">{project.number}</div>
-                          <div className="project-title">{project.title}</div>
-                          <div className="project-subtitle">{project.subtitle}</div>
-                        </Link>
-                      </li>
-                    )
-                  }
-                  )}
-                </ul>
-              </nav>
-          </Switch>
+    <Router>
+      <nav>
+        <ul>
+          {ProjectData.map((project) => {
+            return(
+              <li key={`${project.id}`}>
+                <Link to={`/project/${project.number}`}>
+                  <div className="project-number">{project.number}</div>
+                  <div className="project-title">{project.title}</div>
+                  <div className="project-subtitle">{project.subtitle}</div>
+                </Link>
+              </li>
+            )
+          }
+          )}
+        </ul>
+      </nav>
 
-          {/* <Switch>
-            <Route path={}></Route>
-          </Switch> */}
-                  
-      </Router>
-    </div>
+        <Switch>
+          {ProjectData.map((project) => {
+            return(
+              <Route key={`${project.id}`} path={`/project/${project.number}`}>
+                <p>{project.title}</p>
+              </Route>
+            )
+          }
+          )}
+        </Switch>
+    </Router>
   );
 }
 
