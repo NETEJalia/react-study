@@ -3,7 +3,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useRouteMatch,
+  useParams
 } from "react-router-dom";
 
 export default function App() {
@@ -19,7 +21,7 @@ export default function App() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+              <Link to="/topics">Topics</Link>
             </li>
           </ul>
         </nav>
@@ -28,8 +30,8 @@ export default function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/topics">
+            <Topics />
           </Route>
           <Route path="/">
             <Home />
@@ -37,7 +39,7 @@ export default function App() {
         </Switch>
       </div>
     </Router>
-  )
+  );
 }
 
 function Home() {
@@ -48,6 +50,38 @@ function About() {
   return <h2>About</h2>;
 }
 
-function Users() {
-  return <h2>Users</h2>;
+function Topics() {
+  let match = useRouteMatch();
+
+  return (
+    <div>
+      <h2>Topics</h2>
+
+      <ul>
+        <li>
+          <Link to={`${match.url}/components`}>Components</Link>
+        </li>
+        <li>
+          <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
+        </li>
+      </ul>
+
+      <Switch>
+        <Route path={`${match.path}/:topicID`}>
+          <Topic />
+        </Route>
+        <Route path={`${match.path}`}>
+          <h3>Please select a topic</h3>
+        </Route>
+      </Switch>
+    </div>
+  );
+}
+
+function Topic() {
+  let topicID = useParams();
+
+  topicID = topicID.topicID;
+
+  return <h2>{topicID}</h2>;
 }
