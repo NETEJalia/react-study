@@ -4,8 +4,6 @@ import {
   Switch,
   Route,
   Link,
-  // useRouteMatch,
-  // useParams
 } from 'react-router-dom';
 import ProjectData from './data/projects.json';
 
