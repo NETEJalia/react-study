@@ -1,0 +1,42 @@
+[
+    {
+        "id": 0,
+        "title": "Voting Rights by State",
+        "subtitle": "Changes over the past decade",
+        "number": "01",
+        "organization": "US Vote Foundation",
+        "contractor": "Jalia Evans"
+    },
+    {
+        "id": 1,
+        "title": "Voter Turnout by Gender",
+        "subtitle": "Male, Female and Non-Binary",
+        "number": "02",
+        "organization": "US Vote Foundation",
+        "contractor": "Gwen O'Brien"
+    },
+    {
+        "id": 2,
+        "title": "LGBT Turnout",
+        "subtitle": "Changes over the past decade",
+        "number": "03",
+        "organization": "Rutgers University",
+        "contractor": "Claire Wooster"
+    },
+    {
+        "id": 3,
+        "title": "Voter Turnout by Legal Status",
+        "subtitle": "Citizen, Greencard, Visa, Illegal",
+        "number": "04",
+        "organization": "Brennan Center of Justice",
+        "contractor": "Jesse Evans"
+    },
+    {
+        "id": 4,
+        "title": "Voter Turnout by Age",
+        "subtitle": "Changes over the past decade",
+        "number": "05",
+        "organization": "Washington Post",
+        "contractor": "Andrew Lipovsky"
+    }
+]
